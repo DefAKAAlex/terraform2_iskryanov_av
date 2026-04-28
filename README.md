@@ -12,7 +12,7 @@
 
 Дописал playbook
 
-##Результат:
+## Результат:
 
 `Terraform отработал и создал все необходимые файлы`
 ![Терраформ](https://github.com/DefAKAAlex/terraform2_iskryanov_av/blob/main/VM.png)
