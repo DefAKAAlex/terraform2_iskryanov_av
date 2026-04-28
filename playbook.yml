@@ -1,0 +1,41 @@
+- name: Install_nginx
+  hosts: webservers
+  become: yes
+  gather_facts: yes
+
+  tasks:
+    - name: Update
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install_nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Create custom index page
+      copy:
+        content: |
+          <html>
+          <body>
+            <h1>Iskryanov</h1>
+          </body>
+          </html>
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: '0644'
+
+    - name: Test_nginnx
+      systemd:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Verify_responding
+      uri:
+        url: http://localhost
+        return_content: yes
+      register: webpage
+      failed_when: webpage.status != 200

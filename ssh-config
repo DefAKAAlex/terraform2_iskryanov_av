@@ -1,0 +1,16 @@
+
+Host bastion
+    HostName 51.250.86.103
+    User user
+    IdentityFile ~/.ssh/id_ed25519
+
+Host 10.0.*
+    User user
+    IdentityFile ~/.ssh/id_ed25519
+    ProxyJump bastion
+    StrictHostKeyChecking no
+
+Host *.ru-central1.internal
+        ProxyJump 51.250.86.103
+        User user
+
