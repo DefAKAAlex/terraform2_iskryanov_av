@@ -12,14 +12,19 @@
 
 Дописал playbook
 
-Результат:
+##Результат:
 
-Terraform отработал и создал все необходимые файлы
-![Терраформ](https://github.com/username/reponame/blob/branch/path/image.png)
-Ansible отработал и установил на обе машины web сервер
-![Ансибле плейбук](https://github.com/username/reponame/blob/branch/path/image.png)
-машины доступны
-![доступ к сайту](https://github.com/username/reponame/blob/branch/path/image.png)
+`Terraform отработал и создал все необходимые файлы`
+![Терраформ](https://github.com/DefAKAAlex/terraform2_iskryanov_av/blob/main/VM.png)
+
+
+`Ansible отработал и установил на обе машины web сервер`
+![Ансибле плейбук](https://github.com/DefAKAAlex/terraform2_iskryanov_av/blob/main/playbook-ok.png)
+
+`машины доступны`
+![доступ к сайту](https://github.com/DefAKAAlex/terraform2_iskryanov_av/blob/main/test-web.png)
+
+
 
 Извините, что не успеваю пройти задания со звёздочкой, и так отстаю от группы на полтора болка из-за неких трудностей.
 Но, суть технологии понял и ощутил "прикол" :) . Дальше в работе точно буду использовать.
